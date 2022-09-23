@@ -1,10 +1,20 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import styles from './Assets/style';
+import {NavigationContainer} from '@react-navigation/native';
+import NavigationTab from './Component/NavigationTab';
+import SystemNavigationBar from 'react-native-system-navigation-bar';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import {View} from 'react-native';
+
 const App = () => {
+  React.useEffect(() => {
+    SystemNavigationBar.navigationHide();
+  }, []);
+
   return (
-    <View style={styles.centerDisplay}>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+      <NavigationTab />
+    </NavigationContainer>
   );
 };
+
+export default App;

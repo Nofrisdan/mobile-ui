@@ -6,6 +6,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
+  fontBoldItalic: {
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
 });
 
 export default styles;
